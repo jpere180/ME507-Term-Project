@@ -1,0 +1,84 @@
+\doxysection{Src/motordriver.c File Reference}
+\hypertarget{motordriver_8c}{}\label{motordriver_8c}\index{Src/motordriver.c@{Src/motordriver.c}}
+
+
+Motor driver implementation.  
+
+
+{\ttfamily \#include "{}motordriver.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{motordriver_8c_a1cf11f63a501b86110685fee39d6c074}{set\+\_\+duty}} (\mbox{\hyperlink{struct_mot_driv}{Mot\+Driv}} \texorpdfstring{$\ast$}{*}motor, int32\+\_\+t duty\+\_\+cycle)
+\begin{DoxyCompactList}\small\item\em Sets the duty cycle for the motor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{motordriver_8c_a30b8256b0cad91f01ce5cb547d910d17}{mot\+\_\+enable}} (\mbox{\hyperlink{struct_mot_driv}{Mot\+Driv}} \texorpdfstring{$\ast$}{*}motor, int32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Enables the motor on the specified channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{motordriver_8c_a791450961ca154548772ed1ef890c255}{mot\+\_\+disable}} (\mbox{\hyperlink{struct_mot_driv}{Mot\+Driv}} \texorpdfstring{$\ast$}{*}motor, int32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Disables the motor on the specified channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Motor driver implementation. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{motordriver_8c_a791450961ca154548772ed1ef890c255}\label{motordriver_8c_a791450961ca154548772ed1ef890c255} 
+\index{motordriver.c@{motordriver.c}!mot\_disable@{mot\_disable}}
+\index{mot\_disable@{mot\_disable}!motordriver.c@{motordriver.c}}
+\doxysubsubsection{\texorpdfstring{mot\_disable()}{mot\_disable()}}
+{\footnotesize\ttfamily void mot\+\_\+disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mot_driv}{Mot\+Driv}} \texorpdfstring{$\ast$}{*}}]{motor,  }\item[{int32\+\_\+t}]{channel }\end{DoxyParamCaption})}
+
+
+
+Disables the motor on the specified channel. 
+
+This function stops the PWM signal on the given channel to disable the motor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em motor} & Pointer to the motor driver structure. \\
+\hline
+{\em channel} & The channel to disable (1 or 2). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{motordriver_8c_a30b8256b0cad91f01ce5cb547d910d17}\label{motordriver_8c_a30b8256b0cad91f01ce5cb547d910d17} 
+\index{motordriver.c@{motordriver.c}!mot\_enable@{mot\_enable}}
+\index{mot\_enable@{mot\_enable}!motordriver.c@{motordriver.c}}
+\doxysubsubsection{\texorpdfstring{mot\_enable()}{mot\_enable()}}
+{\footnotesize\ttfamily void mot\+\_\+enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mot_driv}{Mot\+Driv}} \texorpdfstring{$\ast$}{*}}]{motor,  }\item[{int32\+\_\+t}]{channel }\end{DoxyParamCaption})}
+
+
+
+Enables the motor on the specified channel. 
+
+This function starts the PWM signal on the given channel to enable the motor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em motor} & Pointer to the motor driver structure. \\
+\hline
+{\em channel} & The channel to enable (1 or 2). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{motordriver_8c_a1cf11f63a501b86110685fee39d6c074}\label{motordriver_8c_a1cf11f63a501b86110685fee39d6c074} 
+\index{motordriver.c@{motordriver.c}!set\_duty@{set\_duty}}
+\index{set\_duty@{set\_duty}!motordriver.c@{motordriver.c}}
+\doxysubsubsection{\texorpdfstring{set\_duty()}{set\_duty()}}
+{\footnotesize\ttfamily void set\+\_\+duty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mot_driv}{Mot\+Driv}} \texorpdfstring{$\ast$}{*}}]{motor,  }\item[{int32\+\_\+t}]{duty\+\_\+cycle }\end{DoxyParamCaption})}
+
+
+
+Sets the duty cycle for the motor. 
+
+This function adjusts the duty cycle for the motor to move it forward, backward, or stop it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em motor} & Pointer to the motor driver structure. \\
+\hline
+{\em duty\+\_\+cycle} & The desired duty cycle for the motor. Positive values move the motor forward, negative values move it backward, and zero stops the motor. \\
+\hline
+\end{DoxyParams}

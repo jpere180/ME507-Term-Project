@@ -1,0 +1,45 @@
+\doxysection{motordriver.\+h}
+\hypertarget{motordriver_8h_source}{}\label{motordriver_8h_source}\index{Inc/motordriver.h@{Inc/motordriver.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ motordriver.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_MOTORDRIVER\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_MOTORDRIVER\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}stm32l4xx\_hal.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//Include\ information\ to\ a\ specific\ motor\ driver\ channel:}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//1.\ The\ handle\ to\ the\ HAL\ timer\ object\ used\ for\ PWM\ generation}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//2.\ The\ pins\ and\ ports\ associated\ with\ the\ pins\ used\ by\ the\ driver}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//3.\ What\ channels\ on\ the\ timer\ are\ associated\ with\ the\ PWM\ pins}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//4.\ Any\ other\ information\ needed\ for\ the\ three\ above\string^\string^\string^}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Motor\ object\ data\ structure}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//object\ for\ duty\_cycle}}
+\DoxyCodeLine{00021\ \ \ \ \ int32\_t\ duty\_cycle;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//making\ the\ channel\ an\ object;}}
+\DoxyCodeLine{00023\ \ \ \ \ uint32\_t\ channel1;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//making\ the\ channel\ an\ object;}}
+\DoxyCodeLine{00025\ \ \ \ \ uint32\_t\ channel2;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//Timer\ objects}}
+\DoxyCodeLine{00027\ \ \ \ \ TIM\_HandleTypeDef*\ hal\_tim;}
+\DoxyCodeLine{00028\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct_mot_driv}{MotDriv}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//Prototype\ to\ enable\ motor}}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{motordriver_8c_a30b8256b0cad91f01ce5cb547d910d17}{mot\_enable}}(\mbox{\hyperlink{struct_mot_driv}{MotDriv}}*\ motor,\ int32\_t\ channel);}
+\DoxyCodeLine{00034\ \textcolor{comment}{//Prototype\ to\ disable\ motor}}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{motordriver_8c_a791450961ca154548772ed1ef890c255}{mot\_disable}}(\mbox{\hyperlink{struct_mot_driv}{MotDriv}}*\ motor,int32\_t\ channel);}
+\DoxyCodeLine{00036\ \textcolor{comment}{//\ Prototype\ for\ motor\ object\ "{}method"{}}}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{motordriver_8c_a1cf11f63a501b86110685fee39d6c074}{set\_duty}}(\mbox{\hyperlink{struct_mot_driv}{MotDriv}}*\ motor,\ int32\_t\ duty\_cycle);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_MOTORDRIVER\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
