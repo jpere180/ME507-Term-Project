@@ -4,8 +4,9 @@ var indexSectionsWithContent =
   1: "m",
   2: "ms",
   3: "_bdehmnpsu",
-  4: "aehlmtuv",
-  5: "cs"
+  4: "cdh",
+  5: "aehlmtuv",
+  6: "cs"
 };
 
 var indexSectionNames =
@@ -14,8 +15,9 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "defines",
-  5: "groups"
+  4: "variables",
+  5: "defines",
+  6: "groups"
 };
 
 var indexSectionLabels =
@@ -24,7 +26,8 @@ var indexSectionLabels =
   1: "Classes",
   2: "Files",
   3: "Functions",
-  4: "Macros",
-  5: "Modules"
+  4: "Variables",
+  5: "Macros",
+  6: "Modules"
 };
 

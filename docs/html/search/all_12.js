@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sdio_20and_20rng_20clock_0',['SDIO and RNG clock                     |',['../system__stm32l4xx_8c.html#autotoc_md18',1,'']]],
-  ['set_5fduty_1',['set_duty',['../motordriver_8c.html#a1cf11f63a501b86110685fee39d6c074',1,'motordriver.c']]],
+  ['set_5fduty_1',['set_duty',['../motordriver_8c.html#a1cf11f63a501b86110685fee39d6c074',1,'set_duty(MotDriv *motor, int32_t duty_cycle):&#160;motordriver.c'],['../motordriver_8h.html#a1cf11f63a501b86110685fee39d6c074',1,'set_duty(MotDriv *motor, int32_t duty_cycle):&#160;motordriver.c']]],
   ['source_20msi_2',['System Clock source                    | MSI',['../system__stm32l4xx_8c.html#autotoc_md1',1,'']]],
   ['stm32l4xx_5fhal_5fconf_2eh_3',['stm32l4xx_hal_conf.h',['../stm32l4xx__hal__conf_8h.html',1,'']]],
   ['stm32l4xx_5fhal_5fmsp_2ec_4',['stm32l4xx_hal_msp.c',['../stm32l4xx__hal__msp_8c.html',1,'']]],
