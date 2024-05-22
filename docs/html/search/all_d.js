@@ -1,6 +1,20 @@
 var searchData=
 [
-  ['lse_5fstartup_5ftimeout_0',['LSE_STARTUP_TIMEOUT',['../stm32l4xx__hal__conf_8h.html#a85e6fc812dc26f7161a04be2568a5462',1,'stm32l4xx_hal_conf.h']]],
-  ['lse_5fvalue_1',['LSE_VALUE',['../stm32l4xx__hal__conf_8h.html#a7bbb9d19e5189a6ccd0fb6fa6177d20d',1,'stm32l4xx_hal_conf.h']]],
-  ['lsi_5fvalue_2',['LSI_VALUE',['../stm32l4xx__hal__conf_8h.html#a4872023e65449c0506aac3ea6bec99e9',1,'stm32l4xx_hal_conf.h']]]
+  ['hal_5fmodule_5fenabled_0',['HAL_MODULE_ENABLED',['../stm32l4xx__hal__conf_8h.html#a877ae99e8c47a609ea97c888912bf75f',1,'stm32l4xx_hal_conf.h']]],
+  ['hal_5fmspinit_1',['HAL_MspInit',['../stm32l4xx__hal__msp_8c.html#ae4fb8e66865c87d0ebab74a726a6891f',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5ftim_2',['hal_tim',['../struct_mot_driv.html#a9fd903a0d943bc78f34dcd7d8dc29277',1,'MotDriv']]],
+  ['hal_5ftim_5fmsppostinit_3',['HAL_TIM_MspPostInit',['../main_8h.html#ae70bce6c39d0b570a7523b86738cec4b',1,'HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim):&#160;stm32l4xx_hal_msp.c'],['../stm32l4xx__hal__msp_8c.html#ae70bce6c39d0b570a7523b86738cec4b',1,'HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim):&#160;stm32l4xx_hal_msp.c']]],
+  ['hal_5ftim_5fpwm_5fmspdeinit_4',['HAL_TIM_PWM_MspDeInit',['../stm32l4xx__hal__msp_8c.html#af5f524564b3a99a9f87f45227309e866',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5ftim_5fpwm_5fmspinit_5',['HAL_TIM_PWM_MspInit',['../stm32l4xx__hal__msp_8c.html#a24d5b9c609d8b753d95508419f4c1901',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fuart_5fmspdeinit_6',['HAL_UART_MspDeInit',['../stm32l4xx__hal__msp_8c.html#a718f39804e3b910d738a0e1e46151188',1,'stm32l4xx_hal_msp.c']]],
+  ['hal_5fuart_5fmspinit_7',['HAL_UART_MspInit',['../stm32l4xx__hal__msp_8c.html#a0e553b32211877322f949b14801bbfa7',1,'stm32l4xx_hal_msp.c']]],
+  ['hardfault_5fhandler_8',['HardFault_Handler',['../stm32l4xx__it_8h.html#a2bffc10d5bd4106753b7c30e86903bea',1,'HardFault_Handler(void):&#160;stm32l4xx_it.c'],['../stm32l4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea',1,'HardFault_Handler(void):&#160;stm32l4xx_it.c']]],
+  ['hardware_20documentation_9',['Hardware Documentation',['../hardware_page.html',1,'']]],
+  ['hardware_20specifications_10',['Hardware Specifications',['../hardware_page.html#hardware_specifications',1,'']]],
+  ['hclk_20hz_204000000_11',['HCLK(Hz)                               | 4000000',['../system__stm32l4xx_8c.html#autotoc_md3',1,'']]],
+  ['hse_5fstartup_5ftimeout_12',['HSE_STARTUP_TIMEOUT',['../stm32l4xx__hal__conf_8h.html#a68ecbc9b0a1a40a1ec9d18d5e9747c4f',1,'stm32l4xx_hal_conf.h']]],
+  ['hse_5fvalue_13',['HSE_VALUE',['../stm32l4xx__hal__conf_8h.html#aeafcff4f57440c60e64812dddd13e7cb',1,'HSE_VALUE:&#160;stm32l4xx_hal_conf.h'],['../group___s_t_m32_l4xx___system___private___defines.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'HSE_VALUE:&#160;system_stm32l4xx.c']]],
+  ['hsi48_5fvalue_14',['HSI48_VALUE',['../stm32l4xx__hal__conf_8h.html#a47f01e5e3f2edfa94bf74c08835f3875',1,'stm32l4xx_hal_conf.h']]],
+  ['hsi_5fvalue_15',['HSI_VALUE',['../stm32l4xx__hal__conf_8h.html#aaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE:&#160;stm32l4xx_hal_conf.h'],['../group___s_t_m32_l4xx___system___private___defines.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'HSI_VALUE:&#160;system_stm32l4xx.c']]],
+  ['hz_204000000_16',['Hz 4000000',['../system__stm32l4xx_8c.html#autotoc_md3',1,'HCLK(Hz)                               | 4000000'],['../system__stm32l4xx_8c.html#autotoc_md2',1,'SYSCLK(Hz)                             | 4000000']]]
 ];

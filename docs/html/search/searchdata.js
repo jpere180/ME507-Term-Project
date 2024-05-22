@@ -1,12 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "12478_abcdefhlmnprstuv",
+  0: "124678_abcdefhilmnoprstuv",
   1: "m",
   2: "ms",
   3: "_bdehmnpsu",
   4: "cdh",
   5: "aehlmtuv",
-  6: "cs"
+  6: "cs",
+  7: "6dhmpt"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "defines",
-  6: "groups"
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Macros",
-  6: "Modules"
+  6: "Modules",
+  7: "Pages"
 };
 
