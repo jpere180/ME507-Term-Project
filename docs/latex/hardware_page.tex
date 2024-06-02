@@ -1,22 +1,53 @@
 \chapter{Hardware Documentation}
 \hypertarget{hardware_page}{}\label{hardware_page}\index{Hardware Documentation@{Hardware Documentation}}
 \hypertarget{index_intro}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{index_intro}
-This page provides documentation for the hardware aspects of My\+Project.\hypertarget{hardware_page_hardware_specifications}{}\doxysection{\texorpdfstring{Hardware Specifications}{Hardware Specifications}}\label{hardware_page_hardware_specifications}
-
+This page provides documentation for the hardware aspects of our droid.\hypertarget{hardware_page_hardware_specifications}{}\doxysection{\texorpdfstring{Mechanical Hardware Bill of Materials}{Mechanical Hardware Bill of Materials}}\label{hardware_page_hardware_specifications}
+This is a detail bill of materials used to construct B.\+R.\+I.\+E outlining all the main components for this design.
 \begin{DoxyItemize}
-\item \mbox{[}Specification 1\+: Description of the first hardware specification\mbox{]}
-\item \mbox{[}Specification 2\+: Description of the second hardware specification\mbox{]}
-\item \mbox{[}Specification 3\+: Description of the third hardware specification\mbox{]}
-\end{DoxyItemize}\hypertarget{hardware_page_pin_mappings}{}\doxysection{\texorpdfstring{Pin Mappings}{Pin Mappings}}\label{hardware_page_pin_mappings}
+\item 4 12VDC Motors\+: 30\+:1 Ratio, 900 RPM, with Encoder
+\item MP3 Sound Sensor\+: DFR0299
+\item Speaker\+: CS28-\/02\+W57-\/07-\/1X
+\item Ultrasonic Sensor\+: HC-\/\+SR04
+\item Reflectance Sensor Array\+: Pololu QTR-\/8\+RC
+\item Wheels\+: 4 Mecanum Wheels with Motor Shaft Coupling
+\item Development Board\+: NUCLEO-\/\+F411\+RE
+\item MCU\+: STM32\+F411\+RET6
+\item Motor Driver\+: DRV8424\+EPWPR
+\item Black Cast Acrylic Sheet
+\item Bolts\+: 18-\/8 Stainless Steel Hex Drive Flat Head Screw
+\item Motor Bolts\+: Passivated 18-\/8 Stainless Steel Phillips Flat Head Screw
+\end{DoxyItemize}\hypertarget{hardware_page_pin_mappings}{}\doxysection{\texorpdfstring{Electrical Hardware}{Electrical Hardware}}\label{hardware_page_pin_mappings}
+When developing the PCB design various capacitor, resistor, and inductor sizes were selected in regards to what our sensors required.\hypertarget{hardware_page_interfaces}{}\doxysection{\texorpdfstring{Pin Mappings}{Pin Mappings}}\label{hardware_page_interfaces}
+The following image displays our teams PCB design and pin mapping outline developed for this project. To keep our board organized our team partitioned the board into three sections power, analog, and digital. The power section consist of voltage dividers dropping the 12V input to 5 volts and 3 volts. This section also consists of USB connections and a battery power supply. The analog section consist of FETS and the Analog section houses our sensors and motor drivers.
 
-\begin{DoxyItemize}
-\item \mbox{[}Pin Mapping 1\+: Description of the first pin mapping\mbox{]}
-\item \mbox{[}Pin Mapping 2\+: Description of the second pin mapping\mbox{]}
-\item \mbox{[}Pin Mapping 3\+: Description of the third pin mapping\mbox{]}
-\end{DoxyItemize}\hypertarget{hardware_page_interfaces}{}\doxysection{\texorpdfstring{Interfaces}{Interfaces}}\label{hardware_page_interfaces}
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{Electronicpage1.png}
+\doxyfigcaption{Figure 1\+:PCB Electronics Schematic Page 1}
+\end{DoxyImage}
+   
 
-\begin{DoxyItemize}
-\item \mbox{[}Interface 1\+: Description of the first hardware interface\mbox{]}
-\item \mbox{[}Interface 2\+: Description of the second hardware interface\mbox{]}
-\item \mbox{[}Interface 3\+: Description of the third hardware interface\mbox{]} 
-\end{DoxyItemize}
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{Electronicpage2.png}
+\doxyfigcaption{Figure 2\+:PCB Electronics Schematic Page 2}
+\end{DoxyImage}
+   
+
+Once our team decided on the amount and type of components we were able to assemble our PCB design. Our team used a four layer board with a minimum of trace size of 0.\+12. The image below displays an image of the develop design using Fusion 360.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{PCBtraces.png}
+\doxyfigcaption{Figure 3\+:PCB Electronics PCB Design}
+\end{DoxyImage}
+   
+
+The following figure shows our manufactured product that was developed in lab.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{PCB.png}
+\doxyfigcaption{Figure 4\+:Manufactured PCB}
+\end{DoxyImage}
+    

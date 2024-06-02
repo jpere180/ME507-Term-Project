@@ -78,29 +78,48 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro"></a>
 Introduction</h1>
-<p>This page provides documentation for the hardware aspects of MyProject.</p>
+<p>This page provides documentation for the hardware aspects of our droid.</p>
 <h1><a class="anchor" id="hardware_specifications"></a>
-Hardware Specifications</h1>
-<ul>
-<li>[Specification 1: Description of the first hardware specification]</li>
-<li>[Specification 2: Description of the second hardware specification]</li>
-<li>[Specification 3: Description of the third hardware specification]</li>
+Mechanical Hardware Bill of Materials</h1>
+<p>This is a detail bill of materials used to construct B.R.I.E outlining all the main components for this design.</p><ul>
+<li>4 12VDC Motors: 30:1 Ratio, 900 RPM, with Encoder</li>
+<li>MP3 Sound Sensor: DFR0299</li>
+<li>Speaker: CS28-02W57-07-1X</li>
+<li>Ultrasonic Sensor: HC-SR04</li>
+<li>Reflectance Sensor Array: Pololu QTR-8RC</li>
+<li>Wheels: 4 Mecanum Wheels with Motor Shaft Coupling</li>
+<li>Development Board: NUCLEO-F411RE</li>
+<li>MCU: STM32F411RET6</li>
+<li>Motor Driver: DRV8424EPWPR</li>
+<li>Black Cast Acrylic Sheet</li>
+<li>Bolts: 18-8 Stainless Steel Hex Drive Flat Head Screw</li>
+<li>Motor Bolts: Passivated 18-8 Stainless Steel Phillips Flat Head Screw</li>
 </ul>
 <h1><a class="anchor" id="pin_mappings"></a>
-Pin Mappings</h1>
-<ul>
-<li>[Pin Mapping 1: Description of the first pin mapping]</li>
-<li>[Pin Mapping 2: Description of the second pin mapping]</li>
-<li>[Pin Mapping 3: Description of the third pin mapping]</li>
-</ul>
+Electrical Hardware</h1>
+<p>When developing the PCB design various capacitor, resistor, and inductor sizes were selected in regards to what our sensors required.</p>
 <h1><a class="anchor" id="interfaces"></a>
-Interfaces</h1>
-<ul>
-<li>[Interface 1: Description of the first hardware interface]</li>
-<li>[Interface 2: Description of the second hardware interface]</li>
-<li>[Interface 3: Description of the third hardware interface] </li>
-</ul>
-</div></div><!-- contents -->
+Pin Mappings</h1>
+<p>The following image displays our teams PCB design and pin mapping outline developed for this project. To keep our board organized our team partitioned the board into three sections power, analog, and digital. The power section consist of voltage dividers dropping the 12V input to 5 volts and 3 volts. This section also consists of USB connections and a battery power supply. The analog section consist of FETS and the Analog section houses our sensors and motor drivers.</p>
+<div class="image">
+<img src="Electronicpage1.png" alt=""/>
+<div class="caption">
+Figure 1:PCB Electronics Schematic Page 1</div></div>
+    <div class="image">
+<img src="Electronicpage2.png" alt=""/>
+<div class="caption">
+Figure 2:PCB Electronics Schematic Page 2</div></div>
+    <p>Once our team decided on the amount and type of components we were able to assemble our PCB design. Our team used a four layer board with a minimum of trace size of 0.12. The image below displays an image of the develop design using Fusion 360.</p>
+<div class="image">
+<img src="PCBtraces.png" alt=""/>
+<div class="caption">
+Figure 3:PCB Electronics PCB Design</div></div>
+    <p>The following figure shows our manufactured product that was developed in lab.</p>
+<div class="image">
+<img src="PCB.png" alt=""/>
+<div class="caption">
+Figure 4:Manufactured PCB</div></div>
+     </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

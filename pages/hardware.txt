@@ -7,20 +7,39 @@
  * @page hardware_page Hardware Documentation
  *
  * @section intro Introduction
- * This page provides documentation for the hardware aspects of MyProject.
+ * This page provides documentation for the hardware aspects of our droid.
  *
- * @section hardware_specifications Hardware Specifications
- * - [Specification 1: Description of the first hardware specification]
- * - [Specification 2: Description of the second hardware specification]
- * - [Specification 3: Description of the third hardware specification]
+ * @section hardware_specifications Mechanical Hardware Bill of Materials
+ * This is a detail bill of materials used to construct B.R.I.E outlining all the main components for this design. 
+ * - 4 12VDC Motors: 30:1 Ratio, 900 RPM, with Encoder
+ * - MP3 Sound Sensor: DFR0299
+ * - Speaker: CS28-02W57-07-1X
+ * - Ultrasonic Sensor: HC-SR04
+ * - Reflectance Sensor Array: Pololu QTR-8RC 
+ * - Wheels: 4 Mecanum Wheels with Motor Shaft Coupling
+ * - Development Board: NUCLEO-F411RE
+ * - MCU: STM32F411RET6
+ * - Motor Driver: DRV8424EPWPR
+ * - Black Cast Acrylic Sheet
+ * - Bolts: 18-8 Stainless Steel Hex Drive Flat Head Screw
+ * - Motor Bolts: Passivated 18-8 Stainless Steel Phillips Flat Head Screw
+
+ * @section pin_mappings Electrical Hardware
+ * When developing the PCB design various capacitor, resistor, and inductor sizes were selected in regards to what our sensors required. 
  *
- * @section pin_mappings Pin Mappings
- * - [Pin Mapping 1: Description of the first pin mapping]
- * - [Pin Mapping 2: Description of the second pin mapping]
- * - [Pin Mapping 3: Description of the third pin mapping]
+ * @section interfaces Pin Mappings
+ * The following image displays our teams PCB design and pin mapping outline developed for this project. To keep our board organized our team partitioned the board into three sections power, analog, and digital. The power section consist of voltage dividers dropping the 12V input to 5 volts and 3 volts. This section also consists of USB connections and a battery power supply. The analog section consist of FETS and the Analog section houses our sensors and motor drivers. 
+ * 
+ * ![Figure 1:PCB Electronics Schematic Page 1](images/Electronicpage1.png)
  *
- * @section interfaces Interfaces
- * - [Interface 1: Description of the first hardware interface]
- * - [Interface 2: Description of the second hardware interface]
- * - [Interface 3: Description of the third hardware interface]
+ * ![Figure 2:PCB Electronics Schematic Page 2](images/Electronicpage2.png)
+ * 
+ * 
+ * Once our team decided on the amount and type of components we were able to assemble our PCB design. Our team used a four layer board with a minimum of trace size of 0.12. The image below displays an image of the develop design using Fusion 360. 
+ * 
+ * ![Figure 3:PCB Electronics PCB Design](images/PCBtraces.png)
+ * 
+ * The following figure shows our manufactured product that was developed in lab.
+ * 
+ * ![Figure 4:Manufactured PCB](images/PCB.png)
  */

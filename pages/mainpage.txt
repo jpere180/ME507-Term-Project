@@ -17,9 +17,9 @@ B.R.I.E stands for: Base Repair and Inspection Entity. This name was selected in
  *
  * @section features Features
  * B.R.I.E includes the following features:
- * - An Ultrasonic sensor: to detect creatures or obstacles 
- * - A Audio emitter: to emit an emotional response or alarm intruders
- * - A Line following sensor: to navigate its route 
+ * - Ultrasonic sensor: to detect creatures or obstacles 
+ * - Audio emitter: to emit an emotional response or alarm intruders
+ * - Line following sensor: to navigate its route 
  *
  * @section requirements Requirements
  * To use or build our droid, you will need the following:
@@ -29,5 +29,7 @@ B.R.I.E stands for: Base Repair and Inspection Entity. This name was selected in
  *
  * @section authors Authors
  * - Jessica Perez
+ * - Aaron Escamilla
+ * - Karen Morales De Leon
  *
  */
