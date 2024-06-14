@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['clock_0',['SDIO and RNG clock                     |',['../system__stm32l4xx_8c.html#autotoc_md18',1,'']]],
-  ['clock_20as_20follows_3a_1',['This file configures the system clock as follows:',['../system__stm32l4xx_8c.html#autotoc_md0',1,'']]],
-  ['clock_20source_20msi_2',['System Clock source                    | MSI',['../system__stm32l4xx_8c.html#autotoc_md1',1,'']]],
-  ['cmsis_3',['CMSIS',['../group___c_m_s_i_s.html',1,'']]],
-  ['configures_20the_20system_20clock_20as_20follows_3a_4',['This file configures the system clock as follows:',['../system__stm32l4xx_8c.html#autotoc_md0',1,'']]]
+  ['gpio_5fpin_5fen_0',['gpio_pin_en',['../struct_motor___driver.html#af62b644a13d78cb74d83aeebb4da3c57',1,'Motor_Driver']]],
+  ['gpio_5fport_5fen_1',['gpio_port_en',['../struct_motor___driver.html#a72bcf3f7af576f78407d7ddb4c31f7e4',1,'Motor_Driver']]]
 ];

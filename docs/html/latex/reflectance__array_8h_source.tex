@@ -1,0 +1,39 @@
+\doxysection{reflectance\+\_\+array.\+h}
+\hypertarget{reflectance__array_8h_source}{}\label{reflectance__array_8h_source}\index{Inc/reflectance\_array.h@{Inc/reflectance\_array.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ reflectance\_array.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Created\ on:\ Jun\ 6,\ 2024}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ Aaron\ Escamilla}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INC\_REFLECTANCE\_ARRAY\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INC\_REFLECTANCE\_ARRAY\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}stm32f4xx\_hal.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00019\ \ \ \ \ GPIO\_TypeDef\ *\mbox{\hyperlink{structreflect_ad0b9a2c6edefcd15e6e796460e99b420}{portB}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ GPIO\_TypeDef\ *\mbox{\hyperlink{structreflect_a962630f2a471c86848c179e4492adcb3}{portC}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_a35876c6e8439604566c24d2b78bbfb41}{pin1}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_a18376a631e6cbf748ad1015a4d4576fc}{pin2}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_a95c660e00b04e2cb46b8c49b6b4de534}{pin3}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_aab0ce04ca00b949308f46481fabbee0a}{pin4}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_ad122e65dcdaa0bc38a08c4182673a6bd}{pin5}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_adf5495b8fbb9f984dd805db665e49b40}{pin6}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_abf28dca5949d36becf73961343b361ae}{pin7}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structreflect_ace60d0ca0dfb37446ebd5c0e93aac1f1}{pin8}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ TIM\_HandleTypeDef\ *\mbox{\hyperlink{structreflect_af697321815021383adc1af253604fbf1}{timer}};\ }
+\DoxyCodeLine{00030\ \}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structreflect}{reflect}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ calibrate(\mbox{\hyperlink{structreflect}{reflect}}*\ ref);\ \textcolor{comment}{//,int\ cal\_num);}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{float}\ direction(\mbox{\hyperlink{structreflect}{reflect}}*\ ref);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00054\ uint32\_t\ read\_sensor(\mbox{\hyperlink{structreflect}{reflect}}*\ ref,\ \textcolor{keywordtype}{int}\ pin\_num);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_REFLECTANCE\_ARRAY\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

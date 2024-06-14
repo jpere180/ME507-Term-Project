@@ -1,0 +1,132 @@
+\doxysection{Inc/\+Ultrasonic.h File Reference}
+\hypertarget{_ultrasonic_8h}{}\label{_ultrasonic_8h}\index{Inc/Ultrasonic.h@{Inc/Ultrasonic.h}}
+
+
+\doxylink{struct_ultrasonic}{Ultrasonic} header file.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ultrasonic}{Ultrasonic}}
+\begin{DoxyCompactList}\small\item\em Structure to represent an ultrasonic sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ultrasonic_8h_a7b61fd792b19e8c01ed11df8eb4ae2a9}{Ultrasonic\+\_\+\+Init}} (TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim)
+\begin{DoxyCompactList}\small\item\em Initializes the ultrasonic sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ultrasonic_8h_a88fbf36c4a5699523949732d47041fb5}{Ultrasonic\+\_\+\+Trigger}} (TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim, GPIO\+\_\+\+Type\+Def \texorpdfstring{$\ast$}{*}TRIG\+\_\+\+PORT, uint16\+\_\+t TRIG\+\_\+\+PIN)
+\begin{DoxyCompactList}\small\item\em Triggers the ultrasonic sensor to start a measurement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ultrasonic_8h_a9d517f149ec0159d25bfdda540c14d1a}{Ultrasonic\+\_\+\+Measure}} (\mbox{\hyperlink{struct_ultrasonic}{Ultrasonic}} \texorpdfstring{$\ast$}{*}sensor, TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim, GPIO\+\_\+\+Type\+Def \texorpdfstring{$\ast$}{*}ECHO\+\_\+\+PORT, uint16\+\_\+t ECHO\+\_\+\+PIN)
+\begin{DoxyCompactList}\small\item\em Measures the distance using the ultrasonic sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{struct_ultrasonic}{Ultrasonic} header file. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_ultrasonic_8h_a7b61fd792b19e8c01ed11df8eb4ae2a9}\label{_ultrasonic_8h_a7b61fd792b19e8c01ed11df8eb4ae2a9} 
+\index{Ultrasonic.h@{Ultrasonic.h}!Ultrasonic\_Init@{Ultrasonic\_Init}}
+\index{Ultrasonic\_Init@{Ultrasonic\_Init}!Ultrasonic.h@{Ultrasonic.h}}
+\doxysubsubsection{\texorpdfstring{Ultrasonic\_Init()}{Ultrasonic\_Init()}}
+{\footnotesize\ttfamily void Ultrasonic\+\_\+\+Init (\begin{DoxyParamCaption}\item[{TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{htim }\end{DoxyParamCaption})}
+
+
+
+Initializes the ultrasonic sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em htim} & Timer handle used for the ultrasonic sensor.\\
+\hline
+\end{DoxyParams}
+Initializes the ultrasonic sensor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em htim} & Pointer to a TIM\+\_\+\+Handle\+Type\+Def structure that contains the configuration information for TIM Base module. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_ultrasonic_8h_a9d517f149ec0159d25bfdda540c14d1a}\label{_ultrasonic_8h_a9d517f149ec0159d25bfdda540c14d1a} 
+\index{Ultrasonic.h@{Ultrasonic.h}!Ultrasonic\_Measure@{Ultrasonic\_Measure}}
+\index{Ultrasonic\_Measure@{Ultrasonic\_Measure}!Ultrasonic.h@{Ultrasonic.h}}
+\doxysubsubsection{\texorpdfstring{Ultrasonic\_Measure()}{Ultrasonic\_Measure()}}
+{\footnotesize\ttfamily void Ultrasonic\+\_\+\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ultrasonic}{Ultrasonic}} \texorpdfstring{$\ast$}{*}}]{sensor,  }\item[{TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{htim,  }\item[{GPIO\+\_\+\+Type\+Def \texorpdfstring{$\ast$}{*}}]{ECHO\+\_\+\+PORT,  }\item[{uint16\+\_\+t}]{ECHO\+\_\+\+PIN }\end{DoxyParamCaption})}
+
+
+
+Measures the distance using the ultrasonic sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & Pointer to the \doxylink{struct_ultrasonic}{Ultrasonic} structure. \\
+\hline
+{\em htim} & Timer handle used for the ultrasonic sensor. \\
+\hline
+{\em ECHO\+\_\+\+PORT} & GPIO port for the echo pin. \\
+\hline
+{\em ECHO\+\_\+\+PIN} & GPIO pin for the echo.\\
+\hline
+\end{DoxyParams}
+Measures the distance using the ultrasonic sensor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & Pointer to the \doxylink{struct_ultrasonic}{Ultrasonic} structure. \\
+\hline
+{\em htim} & Pointer to a TIM\+\_\+\+Handle\+Type\+Def structure that contains the configuration information for TIM Base module. \\
+\hline
+{\em ECHO\+\_\+\+PORT} & GPIO Port used for the ECHO pin. \\
+\hline
+{\em ECHO\+\_\+\+PIN} & GPIO Pin number for the ECHO pin. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_ultrasonic_8h_a88fbf36c4a5699523949732d47041fb5}\label{_ultrasonic_8h_a88fbf36c4a5699523949732d47041fb5} 
+\index{Ultrasonic.h@{Ultrasonic.h}!Ultrasonic\_Trigger@{Ultrasonic\_Trigger}}
+\index{Ultrasonic\_Trigger@{Ultrasonic\_Trigger}!Ultrasonic.h@{Ultrasonic.h}}
+\doxysubsubsection{\texorpdfstring{Ultrasonic\_Trigger()}{Ultrasonic\_Trigger()}}
+{\footnotesize\ttfamily void Ultrasonic\+\_\+\+Trigger (\begin{DoxyParamCaption}\item[{TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{htim,  }\item[{GPIO\+\_\+\+Type\+Def \texorpdfstring{$\ast$}{*}}]{TRIG\+\_\+\+PORT,  }\item[{uint16\+\_\+t}]{TRIG\+\_\+\+PIN }\end{DoxyParamCaption})}
+
+
+
+Triggers the ultrasonic sensor to start a measurement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em htim} & Timer handle used for the ultrasonic sensor. \\
+\hline
+{\em TRIG\+\_\+\+PORT} & GPIO port for the trigger pin. \\
+\hline
+{\em TRIG\+\_\+\+PIN} & GPIO pin for the trigger.\\
+\hline
+\end{DoxyParams}
+Triggers the ultrasonic sensor to start a measurement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em htim} & Pointer to a TIM\+\_\+\+Handle\+Type\+Def structure that contains the configuration information for TIM Base module. \\
+\hline
+{\em TRIG\+\_\+\+PORT} & GPIO Port used for the TRIG pin. \\
+\hline
+{\em TRIG\+\_\+\+PIN} & GPIO Pin number for the TRIG pin. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

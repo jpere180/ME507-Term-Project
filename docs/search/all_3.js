@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['6_20droid_0',['Term Project: MSE-6 Droid',['../index.html',1,'']]]
+  ['bill_20of_20materials_0',['Mechanical Hardware Bill of Materials',['../hardware_page.html#hardware_specifications',1,'']]],
+  ['busfault_5fhandler_1',['BusFault_Handler',['../stm32f4xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f4xx_it.c']]]
 ];

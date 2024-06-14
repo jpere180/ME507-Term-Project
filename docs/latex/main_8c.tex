@@ -6,7 +6,26 @@
 
 
 {\ttfamily \#include "{}main.\+h"{}}\newline
-{\ttfamily \#include "{}motordriver.\+h"{}}\newline
+{\ttfamily \#include "{}Ultrasonic.\+h"{}}\newline
+{\ttfamily \#include "{}DFPLAYER\+\_\+\+MINI.\+h"{}}\newline
+{\ttfamily \#include "{}motor\+\_\+driver2.\+h"{}}\newline
+{\ttfamily \#include "{}radio4brie.\+h"{}}\newline
+{\ttfamily \#include "{}reflectance\+\_\+array.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_a8eab89acd7dcb0e77e7b00d1749022a6}\label{main_8c_a8eab89acd7dcb0e77e7b00d1749022a6} 
+\#define {\bfseries TRIG\+\_\+\+PIN}~GPIO\+\_\+\+PIN\+\_\+9
+\item 
+\Hypertarget{main_8c_a4218ee733389fc980d683455725e59d4}\label{main_8c_a4218ee733389fc980d683455725e59d4} 
+\#define {\bfseries TRIG\+\_\+\+PORT}~GPIOC
+\item 
+\Hypertarget{main_8c_acea96cea4a13b6cb38e57a86788adf90}\label{main_8c_acea96cea4a13b6cb38e57a86788adf90} 
+\#define {\bfseries ECHO\+\_\+\+PIN}~GPIO\+\_\+\+PIN\+\_\+8
+\item 
+\Hypertarget{main_8c_aa946d3ae377878e068c30730cc81c298}\label{main_8c_aa946d3ae377878e068c30730cc81c298} 
+\#define {\bfseries ECHO\+\_\+\+PORT}~GPIOA
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -14,37 +33,159 @@ void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+
 \begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
 \begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
-\Hypertarget{main_8c_ae494a9643f29b87d6d81e5264e60e57b}\label{main_8c_ae494a9643f29b87d6d81e5264e60e57b} 
-void {\bfseries HAL\+\_\+\+UART\+\_\+\+Rx\+Cplt\+Callback} (UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}huart)
+\Hypertarget{main_8c_a77a2401a35ddd9bd0b8fc28331b81381}\label{main_8c_a77a2401a35ddd9bd0b8fc28331b81381} 
+void {\bfseries HAL\+\_\+\+TIM\+\_\+\+IC\+\_\+\+Capture\+Callback} (TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim)
 \item 
 void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
 \begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{main_8c_a2c80fd5510e2990a59a5c90d745c716c}\label{main_8c_a2c80fd5510e2990a59a5c90d745c716c} 
-TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim2}
+\Hypertarget{main_8c_a22b804736f5648d52f639b2647d4ed13}\label{main_8c_a22b804736f5648d52f639b2647d4ed13} 
+ADC\+\_\+\+Handle\+Type\+Def {\bfseries hadc1}
+\item 
+\Hypertarget{main_8c_a25fc663547539bc49fecc0011bd76ab5}\label{main_8c_a25fc663547539bc49fecc0011bd76ab5} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim1}
 \item 
 \Hypertarget{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62}\label{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62} 
 TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim3}
 \item 
-\Hypertarget{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}\label{main_8c_aa9479c261d65eecedd3d9582f7f0f89c} 
-UART\+\_\+\+Handle\+Type\+Def {\bfseries huart2}
+\Hypertarget{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}\label{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5} 
+UART\+\_\+\+Handle\+Type\+Def {\bfseries huart1}
+\begin{DoxyCompactList}\small\item\em External UART handle. \end{DoxyCompactList}\item 
+\Hypertarget{main_8c_a6f12e2301255cef2cb15da68b8c01622}\label{main_8c_a6f12e2301255cef2cb15da68b8c01622} 
+\mbox{\hyperlink{struct_ultrasonic}{Ultrasonic}} {\bfseries ultrasonic}
 \item 
-\Hypertarget{main_8c_affb8c4384064bb2f9207b82bf2e01e8b}\label{main_8c_affb8c4384064bb2f9207b82bf2e01e8b} 
-char {\bfseries char\+\_\+in}
+\Hypertarget{main_8c_a5e27658eb9ef5c6a03de9270c1d193da}\label{main_8c_a5e27658eb9ef5c6a03de9270c1d193da} 
+int {\bfseries pulse} = 0
 \item 
-\Hypertarget{main_8c_ace464542ab6838ec344d3719c8c6d5e7}\label{main_8c_ace464542ab6838ec344d3719c8c6d5e7} 
-uint8\+\_\+t {\bfseries valid\+\_\+entry} = 0
+\Hypertarget{main_8c_a9ccd81d8be98d19dda21fe7739bf4183}\label{main_8c_a9ccd81d8be98d19dda21fe7739bf4183} 
+int {\bfseries CCW} = 0
 \item 
-\Hypertarget{main_8c_ad4d7fb031d74f1712e42e891e8e9880f}\label{main_8c_ad4d7fb031d74f1712e42e891e8e9880f} 
-uint8\+\_\+t {\bfseries motor\+\_\+one} = 0
+\Hypertarget{main_8c_a15cece8a8fa9992eb6e7b8ec5c98a5f0}\label{main_8c_a15cece8a8fa9992eb6e7b8ec5c98a5f0} 
+int {\bfseries CCW1} = 0
 \item 
-\Hypertarget{main_8c_ac16c995fe09dc13cd43625ec8137e487}\label{main_8c_ac16c995fe09dc13cd43625ec8137e487} 
-uint8\+\_\+t {\bfseries motor\+\_\+two} = 0
+\Hypertarget{main_8c_ae181c3927221e7914e89f6ba520caf53}\label{main_8c_ae181c3927221e7914e89f6ba520caf53} 
+int {\bfseries BREAK} = 0
 \item 
-\Hypertarget{main_8c_a4bf517d29404efdb976ba7bf9b8fedc4}\label{main_8c_a4bf517d29404efdb976ba7bf9b8fedc4} 
-int16\+\_\+t {\bfseries dutycycle} = 0
+\Hypertarget{main_8c_a4e9f173e453c016708e6c7e14698af17}\label{main_8c_a4e9f173e453c016708e6c7e14698af17} 
+int {\bfseries CW} = 0
+\item 
+\Hypertarget{main_8c_a0d194f9ec89e93fccd6db276dd43192f}\label{main_8c_a0d194f9ec89e93fccd6db276dd43192f} 
+int {\bfseries CW1} = 0
+\item 
+\Hypertarget{main_8c_a3cf943fd5539f9862e21a676b2e9f588}\label{main_8c_a3cf943fd5539f9862e21a676b2e9f588} 
+int {\bfseries CCW\+\_\+\+HM} = 0
+\item 
+\Hypertarget{main_8c_a389b7c3314186d8485993052a07a3638}\label{main_8c_a389b7c3314186d8485993052a07a3638} 
+int {\bfseries CW\+\_\+\+HM} = 0
+\item 
+\Hypertarget{main_8c_affe5f460197e0bb866c723028e4e87c1}\label{main_8c_affe5f460197e0bb866c723028e4e87c1} 
+int {\bfseries CCW\+\_\+\+DL} = 0
+\item 
+\Hypertarget{main_8c_aaa289fae11e912db7ab757f094c460d7}\label{main_8c_aaa289fae11e912db7ab757f094c460d7} 
+int {\bfseries CW\+\_\+\+DL} = 0
+\item 
+\Hypertarget{main_8c_a32e20065c177fe6e9dea31feff31a75d}\label{main_8c_a32e20065c177fe6e9dea31feff31a75d} 
+int {\bfseries CW\+\_\+\+AR} = 0
+\item 
+\Hypertarget{main_8c_a14c52f534b30611e6276eb46f09d54eb}\label{main_8c_a14c52f534b30611e6276eb46f09d54eb} 
+int {\bfseries CCW\+\_\+\+AR} = 0
+\item 
+\Hypertarget{main_8c_aa7831887ed8da97b541c8002120762a0}\label{main_8c_aa7831887ed8da97b541c8002120762a0} 
+int {\bfseries left\+\_\+counts} = 0
+\item 
+\Hypertarget{main_8c_a02eff5b8c22ad6fb55f87e2094e93616}\label{main_8c_a02eff5b8c22ad6fb55f87e2094e93616} 
+int {\bfseries right\+\_\+counts} = 0
+\item 
+\Hypertarget{main_8c_af28962425d34387bd1b55807ba08bd6e}\label{main_8c_af28962425d34387bd1b55807ba08bd6e} 
+uint32\+\_\+t {\bfseries start\+Tick} = 0
+\item 
+\Hypertarget{main_8c_ae1630c14528021a10fde64cbbd10df56}\label{main_8c_ae1630c14528021a10fde64cbbd10df56} 
+uint32\+\_\+t {\bfseries final\+Tick} = 0
+\item 
+\Hypertarget{main_8c_a93b3f43b8270d0660773f09f76b69aaf}\label{main_8c_a93b3f43b8270d0660773f09f76b69aaf} 
+int {\bfseries trig\+\_\+enable} = 0
+\item 
+\Hypertarget{main_8c_a9070f27c96a09ac05b31a81c06db3d64}\label{main_8c_a9070f27c96a09ac05b31a81c06db3d64} 
+int {\bfseries trig\+\_\+disable} = 0
+\item 
+\Hypertarget{main_8c_a03f8f03a31413e0382753b4f8f08f2e0}\label{main_8c_a03f8f03a31413e0382753b4f8f08f2e0} 
+int {\bfseries total\+\_\+cal} =0
+\item 
+\Hypertarget{main_8c_aff38d0af6df6e0e745ea6c647a8cb5c0}\label{main_8c_aff38d0af6df6e0e745ea6c647a8cb5c0} 
+int {\bfseries FWD} = 0
+\item 
+\Hypertarget{main_8c_a2f48c0dbf7d82c14cd34fc77169191ad}\label{main_8c_a2f48c0dbf7d82c14cd34fc77169191ad} 
+int {\bfseries CRAB} = 0
+\item 
+\Hypertarget{main_8c_ac83a8e317aabc0369638a0e4c4d3406b}\label{main_8c_ac83a8e317aabc0369638a0e4c4d3406b} 
+int {\bfseries NE} = 0
+\item 
+\Hypertarget{main_8c_a6a1811ed2d27e91a485908aa1da1960e}\label{main_8c_a6a1811ed2d27e91a485908aa1da1960e} 
+int {\bfseries NW} = 0
+\item 
+\Hypertarget{main_8c_a76c0d3f619e855cd44ea20e44382b1fa}\label{main_8c_a76c0d3f619e855cd44ea20e44382b1fa} 
+int {\bfseries SE} = 0
+\item 
+\Hypertarget{main_8c_a96f26c89d03e0bb5ca470702c4a7a742}\label{main_8c_a96f26c89d03e0bb5ca470702c4a7a742} 
+int {\bfseries SW} = 0
+\item 
+\Hypertarget{main_8c_a2c53feeb024bdfbee1b88f7735bc6be8}\label{main_8c_a2c53feeb024bdfbee1b88f7735bc6be8} 
+int {\bfseries DONUT} = 0
+\item 
+\Hypertarget{main_8c_a5aa529d359b6c6747809fa8e63de4d10}\label{main_8c_a5aa529d359b6c6747809fa8e63de4d10} 
+int {\bfseries PIVOT} = 0
+\item 
+\Hypertarget{main_8c_a1a1a017923e788726c2ccac01cb8927e}\label{main_8c_a1a1a017923e788726c2ccac01cb8927e} 
+int {\bfseries cali} =1
+\item 
+\Hypertarget{main_8c_af162f3d2a1ac6d5479eae1ae75784879}\label{main_8c_af162f3d2a1ac6d5479eae1ae75784879} 
+int {\bfseries cal\+\_\+end} =0
+\item 
+\Hypertarget{main_8c_a36a94667854289e03c1a9bce3031ef67}\label{main_8c_a36a94667854289e03c1a9bce3031ef67} 
+uint32\+\_\+t {\bfseries state1} = 1
+\item 
+\Hypertarget{main_8c_a80c2450dc83d2ede54d0297bd5bcfe6e}\label{main_8c_a80c2450dc83d2ede54d0297bd5bcfe6e} 
+uint32\+\_\+t {\bfseries state2} = 0
+\item 
+\Hypertarget{main_8c_a9b6a68eca7b2283f26297b0899896d55}\label{main_8c_a9b6a68eca7b2283f26297b0899896d55} 
+int {\bfseries state1st} =1
+\item 
+\Hypertarget{main_8c_a3f1865e9b2e191b6baf0e82076e9ee19}\label{main_8c_a3f1865e9b2e191b6baf0e82076e9ee19} 
+int {\bfseries state2nd} =1
+\item 
+\Hypertarget{main_8c_afa63c90376c270b2c44d09a207c141af}\label{main_8c_afa63c90376c270b2c44d09a207c141af} 
+int {\bfseries DNT\+\_\+\+ST} = 1
+\item 
+\Hypertarget{main_8c_a408eba1a67f78e10b71a780abd572050}\label{main_8c_a408eba1a67f78e10b71a780abd572050} 
+uint32\+\_\+t {\bfseries ADCValue} =0
+\item 
+\Hypertarget{main_8c_a258e347b1e0403a992c3a38c3fe8c3f0}\label{main_8c_a258e347b1e0403a992c3a38c3fe8c3f0} 
+float {\bfseries Volts} = 0
+\item 
+\Hypertarget{main_8c_ac6f4844be7da9a2997efea73d773f68a}\label{main_8c_ac6f4844be7da9a2997efea73d773f68a} 
+float {\bfseries dir} =0
+\item 
+\Hypertarget{main_8c_a3f56d9b52752ede7597318d2090d172e}\label{main_8c_a3f56d9b52752ede7597318d2090d172e} 
+\mbox{\hyperlink{structradio}{radio}} {\bfseries radio1} = \{.timer = \&htim1, .channel = TIM\+\_\+\+CHANNEL\+\_\+2\}
+\item 
+\Hypertarget{main_8c_a0c75f304eaa28425125ba903aff82f4f}\label{main_8c_a0c75f304eaa28425125ba903aff82f4f} 
+uint32\+\_\+t {\bfseries trig} = 1500
+\item 
+\mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} \mbox{\hyperlink{main_8c_aa95b66bd8279a6d7eb7a116d7528c23a}{MOT1}}
+\item 
+\mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} \mbox{\hyperlink{main_8c_a76a4c6e31247c11c51e890385df2b6bf}{MOT2}}
+\item 
+\mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} \mbox{\hyperlink{main_8c_a967ad0fbe11c738ba9830785a11d8ddf}{MOT3}}
+\item 
+\mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} \mbox{\hyperlink{main_8c_a8642adfe303a89c53af992d399b72985}{MOT4}}
+\item 
+\Hypertarget{main_8c_a51a8a0b4eff7fa52d105b1811efda34b}\label{main_8c_a51a8a0b4eff7fa52d105b1811efda34b} 
+\mbox{\hyperlink{structreflect}{reflect}} {\bfseries reflect1} = \{.portB = GPIOB,.portC = GPIOC,.pin1= GPIO\+\_\+\+PIN\+\_\+12,.pin2 = GPIO\+\_\+\+PIN\+\_\+13,.pin3 = GPIO\+\_\+\+PIN\+\_\+14,.pin4 = GPIO\+\_\+\+PIN\+\_\+15,.pin5 = GPIO\+\_\+\+PIN\+\_\+6,.pin6 = GPIO\+\_\+\+PIN\+\_\+7,.pin7 = GPIO\+\_\+\+PIN\+\_\+8,.pin8 = GPIO\+\_\+\+PIN\+\_\+11,.timer = \&htim1\}
+\item 
+\Hypertarget{main_8c_a99977b698202a37f95ef2505250b9dc2}\label{main_8c_a99977b698202a37f95ef2505250b9dc2} 
+int {\bfseries cali\+\_\+track} =0
 \end{DoxyCompactItemize}
 
 
@@ -109,3 +250,65 @@ Configure the main internal regulator output voltage
 Initializes the RCC Oscillators according to the specified parameters in the RCC\+\_\+\+Osc\+Init\+Type\+Def structure.
 
 Initializes the CPU, AHB and APB buses clocks
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_aa95b66bd8279a6d7eb7a116d7528c23a}\label{main_8c_aa95b66bd8279a6d7eb7a116d7528c23a} 
+\index{main.c@{main.c}!MOT1@{MOT1}}
+\index{MOT1@{MOT1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MOT1}{MOT1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} MOT1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .htim\ =\ \&htim3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .channel\ =\ TIM\_CHANNEL\_1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_port\_en\ =\ GPIOC,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_pin\_en\ =\ GPIO\_PIN\_0\}}
+
+\end{DoxyCode}
+\Hypertarget{main_8c_a76a4c6e31247c11c51e890385df2b6bf}\label{main_8c_a76a4c6e31247c11c51e890385df2b6bf} 
+\index{main.c@{main.c}!MOT2@{MOT2}}
+\index{MOT2@{MOT2}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MOT2}{MOT2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} MOT2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .htim\ =\ \&htim3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .channel\ =\ TIM\_CHANNEL\_2,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_port\_en\ =\ GPIOC,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_pin\_en\ =\ GPIO\_PIN\_1\}}
+
+\end{DoxyCode}
+\Hypertarget{main_8c_a967ad0fbe11c738ba9830785a11d8ddf}\label{main_8c_a967ad0fbe11c738ba9830785a11d8ddf} 
+\index{main.c@{main.c}!MOT3@{MOT3}}
+\index{MOT3@{MOT3}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MOT3}{MOT3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} MOT3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .htim\ =\ \&htim3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .channel\ =\ TIM\_CHANNEL\_3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_port\_en\ =\ GPIOC,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_pin\_en\ =\ GPIO\_PIN\_4\}}
+
+\end{DoxyCode}
+\Hypertarget{main_8c_a8642adfe303a89c53af992d399b72985}\label{main_8c_a8642adfe303a89c53af992d399b72985} 
+\index{main.c@{main.c}!MOT4@{MOT4}}
+\index{MOT4@{MOT4}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MOT4}{MOT4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_motor___driver}{Motor\+\_\+\+Driver}} MOT4}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .htim\ =\ \&htim3,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .channel\ =\ TIM\_CHANNEL\_4,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_port\_en\ =\ GPIOC,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .gpio\_pin\_en\ =\ GPIO\_PIN\_5\}}
+
+\end{DoxyCode}

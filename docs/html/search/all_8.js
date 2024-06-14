@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bill_20of_20materials_0',['Mechanical Hardware Bill of Materials',['../hardware_page.html#hardware_specifications',1,'']]],
-  ['busfault_5fhandler_1',['BusFault_Handler',['../stm32l4xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32l4xx_it.c'],['../stm32l4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32l4xx_it.c']]]
+  ['gpio_5fpin_5fen_0',['gpio_pin_en',['../struct_motor___driver.html#af62b644a13d78cb74d83aeebb4da3c57',1,'Motor_Driver']]],
+  ['gpio_5fport_5fen_1',['gpio_port_en',['../struct_motor___driver.html#a72bcf3f7af576f78407d7ddb4c31f7e4',1,'Motor_Driver']]]
 ];

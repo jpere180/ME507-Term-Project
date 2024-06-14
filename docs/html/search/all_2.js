@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['4000000_0',['4000000',['../system__stm32l4xx_8c.html#autotoc_md3',1,'HCLK(Hz)                               | 4000000'],['../system__stm32l4xx_8c.html#autotoc_md2',1,'SYSCLK(Hz)                             | 4000000']]]
+  ['apply_5fpid_0',['apply_pid',['../pid__driver_8c.html#a67f11e930c0e3ee79575cb26c4532945',1,'pid_driver.c']]],
+  ['authors_1',['Authors',['../index.html#authors',1,'']]]
 ];

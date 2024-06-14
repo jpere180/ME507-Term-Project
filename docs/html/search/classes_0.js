@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['motdriv_0',['MotDriv',['../struct_mot_driv.html',1,'']]]
+  ['motor_5fdriver_0',['Motor_Driver',['../struct_motor___driver.html',1,'']]]
 ];

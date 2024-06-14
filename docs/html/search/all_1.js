@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['2_0',['2',['../system__stm32l4xx_8c.html#autotoc_md10',1,'PLL_Q                                  | 2'],['../system__stm32l4xx_8c.html#autotoc_md11',1,'PLL_R                                  | 2']]]
+  ['_5fsbrk_0',['_sbrk',['../sysmem_8c.html#a68125648bcce70b6bb3aa0be50e99700',1,'sysmem.c']]]
 ];

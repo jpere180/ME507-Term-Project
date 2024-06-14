@@ -1,0 +1,126 @@
+\doxysection{Src/pid\+\_\+driver.c File Reference}
+\hypertarget{pid__driver_8c}{}\label{pid__driver_8c}\index{Src/pid\_driver.c@{Src/pid\_driver.c}}
+
+
+\+: PID driver  
+
+
+{\ttfamily \#include $<$pid\+\_\+driver.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pid__driver_8c_a9917038fb39fab261c26d8f1f52b765d}{INTEGRAL\+\_\+\+GAIN\+\_\+\+MAX}}~2000000
+\item 
+\#define \mbox{\hyperlink{pid__driver_8c_a2ded3bab320b6ac387798d39189fb505}{PID\+\_\+\+MAX}}~8000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pid__driver_8c_a6a14303ae93649d2f6c0ed9d74fc2197}{set\+\_\+pid\+\_\+gain}} (\mbox{\hyperlink{struct_p_i_d___driver}{PID\+\_\+\+Driver}} \texorpdfstring{$\ast$}{*}pid\+\_\+instance, float p, float i, float d)
+\begin{DoxyCompactList}\small\item\em Set the PID gains. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pid__driver_8c_a02829dd2b140917c9f218f826bca2016}{reset\+\_\+pid}} (\mbox{\hyperlink{struct_p_i_d___driver}{PID\+\_\+\+Driver}} \texorpdfstring{$\ast$}{*}pid\+\_\+instance)
+\begin{DoxyCompactList}\small\item\em Reset the PID gains and integral error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pid__driver_8c_a67f11e930c0e3ee79575cb26c4532945}{apply\+\_\+pid}} (\mbox{\hyperlink{struct_p_i_d___driver}{PID\+\_\+\+Driver}} \texorpdfstring{$\ast$}{*}pid\+\_\+instance, int16\+\_\+t input\+\_\+error, uint16\+\_\+t sampling\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Apply the PID algorithm to compute the control output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: PID driver 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2024 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{pid__driver_8c_a9917038fb39fab261c26d8f1f52b765d}\label{pid__driver_8c_a9917038fb39fab261c26d8f1f52b765d} 
+\index{pid\_driver.c@{pid\_driver.c}!INTEGRAL\_GAIN\_MAX@{INTEGRAL\_GAIN\_MAX}}
+\index{INTEGRAL\_GAIN\_MAX@{INTEGRAL\_GAIN\_MAX}!pid\_driver.c@{pid\_driver.c}}
+\doxysubsubsection{\texorpdfstring{INTEGRAL\_GAIN\_MAX}{INTEGRAL\_GAIN\_MAX}}
+{\footnotesize\ttfamily \#define INTEGRAL\+\_\+\+GAIN\+\_\+\+MAX~2000000}
+
+Maximum allowable value for the integral gain. \Hypertarget{pid__driver_8c_a2ded3bab320b6ac387798d39189fb505}\label{pid__driver_8c_a2ded3bab320b6ac387798d39189fb505} 
+\index{pid\_driver.c@{pid\_driver.c}!PID\_MAX@{PID\_MAX}}
+\index{PID\_MAX@{PID\_MAX}!pid\_driver.c@{pid\_driver.c}}
+\doxysubsubsection{\texorpdfstring{PID\_MAX}{PID\_MAX}}
+{\footnotesize\ttfamily \#define PID\+\_\+\+MAX~8000}
+
+Maximum allowable output value from the PID controller. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{pid__driver_8c_a67f11e930c0e3ee79575cb26c4532945}\label{pid__driver_8c_a67f11e930c0e3ee79575cb26c4532945} 
+\index{pid\_driver.c@{pid\_driver.c}!apply\_pid@{apply\_pid}}
+\index{apply\_pid@{apply\_pid}!pid\_driver.c@{pid\_driver.c}}
+\doxysubsubsection{\texorpdfstring{apply\_pid()}{apply\_pid()}}
+{\footnotesize\ttfamily void apply\+\_\+pid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_i_d___driver}{PID\+\_\+\+Driver}} \texorpdfstring{$\ast$}{*}}]{pid\+\_\+instance,  }\item[{int16\+\_\+t}]{input\+\_\+error,  }\item[{uint16\+\_\+t}]{sampling\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+Apply the PID algorithm to compute the control output. 
+
+Applies the PID algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid\+\_\+instance} & Pointer to \doxylink{struct_p_i_d___driver}{PID\+\_\+\+Driver} structure. \\
+\hline
+{\em input\+\_\+error} & Current error (desired -\/ measured). \\
+\hline
+{\em sampling\+\_\+rate} & Rate at which the PID algorithm is executed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{pid__driver_8c_a02829dd2b140917c9f218f826bca2016}\label{pid__driver_8c_a02829dd2b140917c9f218f826bca2016} 
+\index{pid\_driver.c@{pid\_driver.c}!reset\_pid@{reset\_pid}}
+\index{reset\_pid@{reset\_pid}!pid\_driver.c@{pid\_driver.c}}
+\doxysubsubsection{\texorpdfstring{reset\_pid()}{reset\_pid()}}
+{\footnotesize\ttfamily void reset\+\_\+pid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_i_d___driver}{PID\+\_\+\+Driver}} \texorpdfstring{$\ast$}{*}}]{pid\+\_\+instance }\end{DoxyParamCaption})}
+
+
+
+Reset the PID gains and integral error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid\+\_\+instance} & Pointer to \doxylink{struct_p_i_d___driver}{PID\+\_\+\+Driver} structure. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{pid__driver_8c_a6a14303ae93649d2f6c0ed9d74fc2197}\label{pid__driver_8c_a6a14303ae93649d2f6c0ed9d74fc2197} 
+\index{pid\_driver.c@{pid\_driver.c}!set\_pid\_gain@{set\_pid\_gain}}
+\index{set\_pid\_gain@{set\_pid\_gain}!pid\_driver.c@{pid\_driver.c}}
+\doxysubsubsection{\texorpdfstring{set\_pid\_gain()}{set\_pid\_gain()}}
+{\footnotesize\ttfamily void set\+\_\+pid\+\_\+gain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_i_d___driver}{PID\+\_\+\+Driver}} \texorpdfstring{$\ast$}{*}}]{pid\+\_\+instance,  }\item[{float}]{p,  }\item[{float}]{i,  }\item[{float}]{d }\end{DoxyParamCaption})}
+
+
+
+Set the PID gains. 
+
+Sets the PID gains.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid\+\_\+instance} & Pointer to \doxylink{struct_p_i_d___driver}{PID\+\_\+\+Driver} structure. \\
+\hline
+{\em p} & Proportional gain. \\
+\hline
+{\em i} & Integral gain. \\
+\hline
+{\em d} & Derivative gain. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
