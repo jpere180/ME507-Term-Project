@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hardware_20documentation_0',['Hardware Documentation',['../hardware_page.html',1,'']]]
+  ['mse_206_20droid_0',['Term Project: MSE-6 Droid',['../index.html',1,'']]]
 ];

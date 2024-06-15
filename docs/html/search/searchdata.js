@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "cdeghiloptv",
   5: "ip",
   6: "cs",
-  7: "6cdhmpt"
+  7: "6dhmpt"
 };
 
 var indexSectionNames =
