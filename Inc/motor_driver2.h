@@ -1,5 +1,5 @@
 /**
- * @file motor_driver.h
+ * @file motor_driver2.h
  * @brief
  * Header for Motor Driver can enable and disable the desired motor. The duty cycle can also be specified once motor is enabled.
  */

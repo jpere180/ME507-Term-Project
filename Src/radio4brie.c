@@ -1,8 +1,6 @@
-/*
- * radio4brie.c
- *
- *  Created on: Jun 10, 2024
- *      Author: Aaron Escamilla
+/**
+ * @file radio4brie.c
+ * @brief Radio Driver.
  */
 
 #include "radio4brie.h"

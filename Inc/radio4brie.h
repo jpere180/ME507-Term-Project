@@ -1,7 +1,6 @@
-/*
- * radio4brie.h
- *
- *  Created on: Jun 10, 2024
+/**
+ * @file radio4brie.h
+ * @brief Radio receiver header file.
  */
 
 #ifndef INC_RADIO4BRIE_H_

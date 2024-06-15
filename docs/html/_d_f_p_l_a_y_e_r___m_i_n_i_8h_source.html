@@ -85,35 +85,37 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">DFPLAYER_MINI.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * DFPLAYER_MINI.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Created on: May 16, 2020</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *      Author: controllerstech</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef INC_DFPLAYER_MINI_H_</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define INC_DFPLAYER_MINI_H_</span></div>
+<a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef INC_DFPLAYER_MINI_H_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define INC_DFPLAYER_MINI_H_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> Send_cmd (uint8_t cmd, uint8_t Parameter1, uint8_t Parameter2);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> DF_PlayFromStart(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> DF_Init (uint8_t volume);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> DF_Next (<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> DF_Pause (<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> DF_Previous (<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> DF_Playback (<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span> Check_Key (<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">/* INC_DFPLAYER_MINI_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a8569ed422cd12b15d5eab2a4526ac779">Send_cmd</a> (uint8_t cmd, uint8_t Parameter1, uint8_t Parameter2);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#ad6514af345022f95c66a90c5da6e6d89">DF_PlayFromStart</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a25cd319616b479822bc242df5b2df1d6">DF_Init</a> (uint8_t volume);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a755a030138d60fb6797d38abb1ff6ccb">DF_Next</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a17651e82272fa7d3235e5727e61d6bb8">DF_Pause</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a8aabc39482ec270b44043b1a703ec972">DF_Previous</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#ad1bd46881f08f23be04d4a6cfa7db82e">DF_Playback</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a93c475f7f8ec4a20d7c2d1ff3aff0e4c">Check_Key</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">/* INC_DFPLAYER_MINI_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_a17651e82272fa7d3235e5727e61d6bb8"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a17651e82272fa7d3235e5727e61d6bb8">DF_Pause</a></div><div class="ttdeci">void DF_Pause(void)</div><div class="ttdoc">Pauses playback.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:83</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_a25cd319616b479822bc242df5b2df1d6"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a25cd319616b479822bc242df5b2df1d6">DF_Init</a></div><div class="ttdeci">void DF_Init(uint8_t volume)</div><div class="ttdoc">Initializes the DFPlayer module.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:63</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_a755a030138d60fb6797d38abb1ff6ccb"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a755a030138d60fb6797d38abb1ff6ccb">DF_Next</a></div><div class="ttdeci">void DF_Next(void)</div><div class="ttdoc">Plays the next track.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:74</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_a8569ed422cd12b15d5eab2a4526ac779"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a8569ed422cd12b15d5eab2a4526ac779">Send_cmd</a></div><div class="ttdeci">void Send_cmd(uint8_t cmd, uint8_t Parameter1, uint8_t Parameter2)</div><div class="ttdoc">Sends a command to the DFPlayer module.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:39</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_a8aabc39482ec270b44043b1a703ec972"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a8aabc39482ec270b44043b1a703ec972">DF_Previous</a></div><div class="ttdeci">void DF_Previous(void)</div><div class="ttdoc">Plays the previous track.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:92</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_a93c475f7f8ec4a20d7c2d1ff3aff0e4c"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a93c475f7f8ec4a20d7c2d1ff3aff0e4c">Check_Key</a></div><div class="ttdeci">void Check_Key(void)</div><div class="ttdoc">Checks the state of control keys and performs corresponding actions.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:110</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_ad1bd46881f08f23be04d4a6cfa7db82e"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#ad1bd46881f08f23be04d4a6cfa7db82e">DF_Playback</a></div><div class="ttdeci">void DF_Playback(void)</div><div class="ttdoc">Resumes playback.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:101</div></div>
+<div class="ttc" id="a_d_f_p_l_a_y_e_r___m_i_n_i_8h_html_ad6514af345022f95c66a90c5da6e6d89"><div class="ttname"><a href="_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#ad6514af345022f95c66a90c5da6e6d89">DF_PlayFromStart</a></div><div class="ttdeci">void DF_PlayFromStart(void)</div><div class="ttdoc">Plays the first track from the start.</div><div class="ttdef"><b>Definition</b> DFPLAYER_MINI.c:52</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

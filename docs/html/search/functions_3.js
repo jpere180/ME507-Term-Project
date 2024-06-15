@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['debugmon_5fhandler_0',['DebugMon_Handler',['../stm32f4xx__it_8c.html#adbdfb05858cc36fc520974df37ec3cb0',1,'DebugMon_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8h.html#adbdfb05858cc36fc520974df37ec3cb0',1,'DebugMon_Handler(void):&#160;stm32f4xx_it.c']]]
+  ['calibrate_0',['calibrate',['../reflectance__array_8c.html#a36104db874d93bc3ca96f6c09918053d',1,'calibrate(reflect *ref):&#160;reflectance_array.c'],['../reflectance__array_8h.html#a36104db874d93bc3ca96f6c09918053d',1,'calibrate(reflect *ref):&#160;reflectance_array.c']]],
+  ['check_5fkey_1',['Check_Key',['../_d_f_p_l_a_y_e_r___m_i_n_i_8c.html#a93c475f7f8ec4a20d7c2d1ff3aff0e4c',1,'Check_Key(void):&#160;DFPLAYER_MINI.c'],['../_d_f_p_l_a_y_e_r___m_i_n_i_8h.html#a93c475f7f8ec4a20d7c2d1ff3aff0e4c',1,'Check_Key(void):&#160;DFPLAYER_MINI.c']]]
 ];

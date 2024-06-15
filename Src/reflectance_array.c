@@ -1,8 +1,6 @@
-/*
- * reflectance_array.c
- *
- *  Created on: Jun 6, 2024
- *      Author: Aaron Escamilla
+ /**
+ * @file reflectance_array.c
+ * @brief Reflectance array source file.
  */
 
 #include "reflectance_array.h"

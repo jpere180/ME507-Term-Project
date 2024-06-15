@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['htim_0',['htim',['../struct_motor___driver.html#a81c0df51ccf841263f747e67222a41b9',1,'Motor_Driver']]],
-  ['huart1_1',['huart1',['../main_8c.html#a2cf715bef37f7e8ef385a30974a5f0d5',1,'main.c']]]
+  ['gpio_5fpin_5fen_0',['gpio_pin_en',['../struct_motor___driver.html#af62b644a13d78cb74d83aeebb4da3c57',1,'Motor_Driver']]],
+  ['gpio_5fport_5fen_1',['gpio_port_en',['../struct_motor___driver.html#a72bcf3f7af576f78407d7ddb4c31f7e4',1,'Motor_Driver']]]
 ];

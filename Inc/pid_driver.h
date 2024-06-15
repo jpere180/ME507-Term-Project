@@ -1,7 +1,6 @@
 /**
- * @file motor_driver.h
- * @brief
- * Header for Motor Driver can enable and disable the desired motor. The duty cycle can also be specified once motor is enabled.
+ * @file pid_driver.h
+ * @brief PID header file.
  */
 
 #ifndef _PID_DRIVER_H_

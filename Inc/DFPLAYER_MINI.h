@@ -1,8 +1,6 @@
-/*
- * DFPLAYER_MINI.h
- *
- *  Created on: May 16, 2020
- *      Author: controllerstech
+/**
+ * @file DFPLAYER_MINI.h
+ * @brief MP3 Header File.
  */
 
 #ifndef INC_DFPLAYER_MINI_H_

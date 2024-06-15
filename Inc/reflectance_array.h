@@ -1,9 +1,8 @@
-/*
- * reflectance_array.h
- *
- *  Created on: Jun 6, 2024
- *      Author: Aaron Escamilla
+/**
+ * @file reflectance_array.h
+ * @brief Reflectance array header file.
  */
+
 
 #ifndef INC_REFLECTANCE_ARRAY_H_
 #define INC_REFLECTANCE_ARRAY_H_

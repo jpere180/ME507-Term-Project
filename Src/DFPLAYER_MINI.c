@@ -1,8 +1,6 @@
-/*
- * DFPLAYER_MINI.c
- *
- *  Created on: May 16, 2020
- *      Author: controllerstech
+/**
+ * @file DFPLAYER_MINI.c
+ * @brief MP3 File.
  */
 
 #include "stm32f4xx_hal.h"
